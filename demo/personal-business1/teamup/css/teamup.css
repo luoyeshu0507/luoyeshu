@@ -136,7 +136,7 @@ body { font-family: Oswald,Helvetica,arial,nimbussansl,liberationsans,freesans,c
 
 .c-container .c-list-wrap .c-list-shownpart .c-list-middle .t-team-member li i:before { content: ''; position: absolute; border-left: 2px dotted #e3e1df; height: 19px; left: 16px; top: 7px; }
 
-.c-container .c-list-wrap .c-list-shownpart .c-list-middle .t-join { color: #fff; text-align: center; font-size: 14px; margin: 28px auto auto 24px; }
+.c-container .c-list-wrap .c-list-shownpart .c-list-middle .t-join { color: #fff; text-align: center; font-size: 14px; width: 400px; margin: 28px auto auto 24px; }
 
 .c-container .c-list-wrap .c-list-shownpart .c-list-middle .t-join i { display: block; float: left; position: relative; width: 38px; height: 38px; border-radius: 19px; background-color: #ebe9e7; line-height: 38px; margin-right: 15px; }
 
@@ -145,6 +145,18 @@ body { font-family: Oswald,Helvetica,arial,nimbussansl,liberationsans,freesans,c
 .c-container .c-list-wrap .c-list-shownpart .c-list-middle .t-join i span:after { content: 'LEFT'; display: block; position: absolute; bottom: 0; left: 0; width: 28px; font-size: 12px; line-height: 14px; -webkit-transform: scale(0.67); -ms-transform: scale(0.67); transform: scale(0.67); }
 
 .c-container .c-list-wrap .c-list-shownpart .c-list-middle .t-join a { display: block; color: #fff; float: left; width: 38px; height: 38px; border-radius: 19px; background-color: #f28d90; line-height: 38px; }
+
+.c-container .c-list-wrap .c-list-shownpart .c-list-middle .t-join .t-num { font-size: 12px; overflow: hidden; margin: auto; float: left; line-height: 12px; margin: 12px 0 0 20px; }
+
+.c-container .c-list-wrap .c-list-shownpart .c-list-middle .t-join .t-num span, .c-container .c-list-wrap .c-list-shownpart .c-list-middle .t-join .t-num b { display: block; float: left; }
+
+.c-container .c-list-wrap .c-list-shownpart .c-list-middle .t-join .t-num span { width: 100px; }
+
+.c-container .c-list-wrap .c-list-shownpart .c-list-middle .t-join .t-num span strong { border: 1px solid #ef595d; display: block; overflow: hidden; }
+
+.c-container .c-list-wrap .c-list-shownpart .c-list-middle .t-join .t-num span strong em { display: block; height: 12px; background-color: #ef595d; }
+
+.c-container .c-list-wrap .c-list-shownpart .c-list-middle .t-join .t-num b { width: 40px; color: #ef595d; }
 
 .c-container .c-list-wrap .c-list-shownpart .c-list-middle .t-user-info { position: absolute; width: 270px; right: -320px; top: 20px; text-align: center; }
 
@@ -172,27 +184,13 @@ body { font-family: Oswald,Helvetica,arial,nimbussansl,liberationsans,freesans,c
 
 .c-container .c-list-wrap .c-list-shownpart .c-list-right li em b { font-weight: 700; }
 
-.c-scores { width: 1000px; margin: 40px auto; overflow: hidden; font-family: Oswald,Helvetica,arial,nimbussansl,liberationsans,freesans,clean,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; }
-
-.c-scores li { width: 248px; border-right: 2px solid #fafafa; float: left; height: 70px; }
-
-.c-scores li:last-child { border-right: none; }
-
-.c-scores li em, .c-scores li i { float: right; width: 160px; line-height: 320px; margin-right: 10px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-overflow: clip; }
-
-.c-scores li em { color: #EA2127; font-size: 36px; line-height: 44px; font-weight: 100; text-align: center; }
-
-.c-scores li i { font-size: 18px; text-align: center; line-height: 24px; color: #ABAAAB; font-weight: 300; }
-
-.c-scores li .g-icon { margin: 22px 0 0 48px; float: left; }
-
 .t-richtext-container { margin: 60px auto; }
 
 .t-richtext-container .t-richtext-left { width: 845px; float: left; }
 
 .t-richtext-container .t-richtext-left .t-item { padding: 24px 40px; background-color: #fff; border-radius: 10px; margin-bottom: 15px; }
 
-.t-richtext-container .t-richtext-left .t-item h1 { line-height: 40px; font-size: 24px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; height: 40px; }
+.t-richtext-container .t-richtext-left .t-item h1 { line-height: 40px; font-size: 26px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; height: 40px; }
 
 .t-richtext-container .t-richtext-left .t-item .t-sub-title { color: #7f7f82; font-size: 14px; line-height: 28px; }
 
@@ -244,9 +242,9 @@ body { font-family: Oswald,Helvetica,arial,nimbussansl,liberationsans,freesans,c
 
 .t-richtext-container .t-richtext-left .t-item .t-switcher { border: 1px solid #e3e4e5; overflow: hidden; color: #adadaf; line-height: 20px; font-size: 12px; text-align: center; width: 210px; margin-bottom: 30px; }
 
-.t-richtext-container .t-richtext-left .t-item .t-switcher li { float: left; width: 50%; cursor: pointer; }
+.t-richtext-container .t-richtext-left .t-item .t-switcher li { float: left; width: 50%; cursor: pointer; background-color: #e3e4e5; }
 
-.t-richtext-container .t-richtext-left .t-item .t-switcher li.on { background-color: #e3e4e5; }
+.t-richtext-container .t-richtext-left .t-item .t-switcher li.on { background-color: #fff; }
 
 .t-richtext-container .t-richtext-left .t-item .t-richtext-wrap { font-size: 14px; line-height: 20px; color: #221f1f; }
 
