@@ -1,0 +1,17 @@
+.mt{margin-top: 50px;}
+.left{background-color: #f5f5f5;}
+.mt15{margin-top: 15px;}
+.tip li{line-height: 34px;}
+.tip2 li{line-height: 28px;}
+.glyphicon{margin-right: 10px;}
+.title{line-height:34px;background-color: #0082cd;}
+.panel-unborder{border: none;border-radius:0;}
+.panel-unborder .panel-heading{border-radius: 0;;}
+.lineheight40{line-height: 40px;}
+.lineheight26{line-height: 26px;}
+.list-title{background-color: #fff;color: #000;padding:0 10px;}
+.list-title .glyphicon{margin-left: 5px;}
+.skill li{margin-bottom: 20px;height: 20px;line-height: 20px;}
+.skill li span{padding: 0 5px;border-radius: 4px;display: inline-block;}
+.bg-default{background-color: #337AB7;}
+

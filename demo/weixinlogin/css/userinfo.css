@@ -1,0 +1,35 @@
+@charset "utf-8";
+*{
+	padding:0;
+	margin: 0;
+}
+body{
+	background-color: #eee;
+}
+#userinfo{
+	padding:0 20px;
+	color:#666;
+	background-color: #fff;
+}
+#userinfo dt{
+	line-height: 60px;
+	height: 60px;
+}
+#userinfo dd{
+	line-height: 40px;
+	height: 40px;
+	border-top: 1px solid #eee;
+}
+#userinfo span{
+	float: left;
+}
+#userinfo em{
+	font-style: normal;
+	float:right;
+}
+#userinfo em img{
+	height: 50px;
+	width: 50px;
+	display: block;
+	margin-top: 5px;
+}

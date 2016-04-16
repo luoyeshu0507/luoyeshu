@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="落叶树，落叶树简历，落叶树首页，落叶树社区，luoyeshu" />
+		<meta name="description" content="落叶树的个人网站!" />
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>form简单验证demo-落叶树首页</title>
+		<!-- Bootstrap -->
+		<link href="../../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../css/main.css" rel="stylesheet">
+		<link href="validator.css" rel="stylesheet">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+	<body>
+		<div class="mt hidden-xs"></div>
+		<div class="container">
+			<div class="page-header">
+				<h1>form简单验证demo</h1>
+			</div>
+			<div class="row">
+				<div class="col-sm-5">
+					<form action="#" method="post" id="myform">
+					  <div class="form-group">
+					    <label for="username">用户名：<span class="msg">请输入6-10位以字母、下划线开头的字符密码！</span></label>
+					    <input type="text" data-validate="username" class="form-control" id="username" placeholder="字母下划线开头6-10位，可以包含数字和大小写字母">
+					  </div>
+					  <div class="form-group">
+					    <label for="email">邮箱：<span class="msg">请输入正确的邮箱地址！</span></label>
+					    <input type="text" data-validate="email" class="form-control" id="email" placeholder="输入您的电子邮箱">
+					  </div>
+					  <div class="form-group">
+					    <label for="phone">手机号：<span class="msg">请输入正确的手机号！</span></label>
+					    <input type="text" data-validate="phone" class="form-control" id="phone" placeholder="输入您的手机号">
+					  </div>
+					  <div class="form-group">
+					    <label for="phonecode">验证码：<span class="msg">请输入正确的验证码！</span></label>
+					    <input type="text" data-validate="phonecode" class="form-control" id="phonecode" placeholder="输入您收到的验证码">
+					  </div>
+					  <div class="form-group">
+					    <label for="habbit">爱好：</label>
+					    <input type="text" class="form-control" id="habbit" placeholder="爱好">
+					  </div>
+					  <div class="text-center">
+				  		<input class="btn btn-default" type="reset" value="Reset">
+					  	<input class="btn btn-primary" type="submit" value="Submit">
+					  </div>
+					</form>
+				</div>
+				<div class="col-sm-7">
+					<div class="panel panel-default">
+					<div class="panel-body">
+						<textarea class="show" name="" rows="" cols="">
+	//插件调用
+	$$('myform').validator({
+		rules:{ //自定义input属性 key对应input id
+			phonecode:{
+				reg:/^\d{6}$/,
+				required:true
+			}
+		},
+		success:function(){ // 验证成功的回调函数
+			alert('验证成功');
+		},
+		fail:function(data){ //验证失败的回调函数 传回失败的input的id数组
+			alert(data+',验证失败');
+		}
+	});
+	
+	实现的基本功能：
+	1：验证表单中带有data-validate属性的input
+	2：点击提交表单的时候验证整个表单，有失败和成功的回调。
+	3：封装了几个自带的验证正则并支持自定义的正则验证。
+	
+	由于时间原因，有许多地方未作优化，有机会再完善：
+	1：时间绑定用了最原始的事件机制。
+	2：有些地方未作循环处理，看起来比较不优雅。
+	3：功能比较单一，不像别的插件那么丰富。
+	4：form选择未作优化，就用了个getElementByid。
+	5：未能写成通用的模块组件。
+	6：自带的正则规则比较少，后续有待补充。
+						</textarea>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<script src="validator.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

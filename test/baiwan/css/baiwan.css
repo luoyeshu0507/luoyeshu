@@ -1,0 +1,35 @@
+@charset "utf-8";
+body{padding: 0;margin: 0;}
+ul,li{padding: 0;margin: 0;list-style: none;}
+a{outline: none;}
+.b-bg1{background: url(../img/baiwan_01.jpg) no-repeat top center;height:486px;}
+.b-bg2{background: url(../img/baiwan_02.jpg) no-repeat top center;height:277px;}
+.b-bg3{background: url(../img/baiwan_03.jpg) no-repeat top center;height:247px;}
+.b-bg4{background: url(../img/baiwan_04.jpg) no-repeat top center;height:367px;}
+.b-bg5{background: url(../img/baiwan_05.jpg) no-repeat top center;height:288px;}
+.container{width: 1000px;height: 100%;position: relative;margin: 0 auto;}
+.b-notlogin{position: absolute;width: 252px;height: 45px;top:50px;left: 134px;}
+.b-notlogin a{display: block;float: left;height: 45px;background: url(../img/login.jpg) no-repeat 0 0;width: 50%;}
+.b-notlogin a.b-sign-a{background-position: right 0;}
+.b-haslogin{position: absolute;height:54px;top:60px;left: 136px;font-size: 14px;line-height: 24px;font-weight: bold;border-bottom: 1px solid #fa3f5a;}
+.b-haslogin span,.b-haslogin a{color: #fa3f5a;text-decoration: none;}
+.b-getgift{position: absolute;width: 418px;height: 294px;background: url(../img/giftbg.gif) no-repeat 0 30px;top:68px;left: 526px;}
+.b-getgift .b-giftlist{width: 430px;position: absolute;top:50px;left: 22px;}
+.b-getgift .b-giftlist li{float: left;width: 120px;height: 69px;overflow: hidden;margin:0 8px 8px 0;position: relative;}
+.b-getgift .b-giftlist li.on span{width: 110px;height: 59px;border: 5px solid #c94739;display: block;position:absolute;top: 0;left: 0;}
+.b-getgift .b-giftlist li img.pointer{cursor: pointer;}
+.b-getgift #b-lefttimes{line-height: 20px;font-size: 14px;color: #91370a;margin-left:15px;font-family: "微软雅黑","黑体";font-weight:bold;}
+.b-gift-bag{position: absolute;top: 140px;left: 555px;height: 120px;}
+.b-gift-bag li{cursor:pointer;float: left;width: 100px;height: 100px;margin-right:25px;background: url(../img/graybag.jpg) no-repeat center top;text-align: center;color: #a6521c;font-size: 14px;font-family: "微软雅黑","黑体";}
+.b-gift-bag li span{display: block;margin-top: 75px;line-height: 20px;}
+.b-gift-bag li span em{font-size: 12px;font-style: normal;color: #666;}
+.b-gift-bag li.on{background-image: url(../img/colorbag.jpg);}
+#screen{z-index: 888;filter: alpha(opacity=40);-moz-opacity: 0.4;opacity: 0.4;background: #000;position: absolute;width: 100%;height: 200%;top: 0;left: 0;}
+#alert{position: absolute;z-index: 999;border-radius:4px;background: #fff;font-size: 14px;}
+#alert .close{display: block;border-radius: 3px;background-color: #fa3f5a;width: 80px;height: 32px;line-height: 32px;margin: 0 auto;color: #fff;text-align: center;text-decoration: none;}
+#alert .info{margin:20px;text-align: center;}
+#alert .info strong.rank{line-height: 64px;color: #585858;font-weight: normal;}
+#alert .info strong span{color:#fa3f5a} 
+#alert .info strong.on{margin-left:80px;display: block;}
+#alert .info em.bg{display: block;background:url(../img/whitebag.jpg) no-repeat;width: 77px;height: 69px;position: absolute;top:15px;left:55px;}
+#alert .info strong.libao-off{display: block;height: 50px;line-height:24px;color: #585858;font-weight: normal;padding-top:10px;}

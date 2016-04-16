@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>weixin login</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<script src="../../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/weixin_getuserinfo.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="css/userinfo.css"/>
+</head>
+<body>
+	<dl id="userinfo">
+	</dl>
+	
+	<script type="text/javascript">
+		getWinxinUserInfo(function(data){
+			if(data.error){
+				alert("error");
+				return;
+			}
+			var html= '<dt><span>头像</span><em><img src="'+data.headimgurl+'"/></em></dt>'+
+							'<dd><span>昵称</span><em>'+data.nickname+'</em></dd>'+
+							'<dd><span>性别</span><em>'+["未知","男","女"][data.sex]+'</em></dd>'+
+							'<dd><span>地区</span><em>'+data.province+' '+data.city+'</em></dd>';
+			$("#userinfo").html(html);
+		});
+	</script>
+</body>
+</html>
