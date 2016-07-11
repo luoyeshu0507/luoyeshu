@@ -5,9 +5,14 @@
 		if (r != null) return unescape(r[2]); return null;
 	}
 	global.getWinxinUserInfo=function(callback){
+		var code=getUrlSearch('code');
+		if(!code){
+			location.href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxbf14eaec418da50e&redirect_uri=http://www.luoyeshu.com/demo/weixinlogin/&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect";
+			return;
+		}
         $.ajax({
             url:'gettoken.php',
-            data:{'code':getUrlSearch('code')},
+            data:{'code':code},
             type:"POST",
             dataType:"json",
             error:function(e){
