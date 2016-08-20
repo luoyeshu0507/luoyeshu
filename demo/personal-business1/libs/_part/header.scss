@@ -7,7 +7,7 @@
 	height:64px;
 	background-color: #a6d6dc;
 	box-shadow: 0px 4px 6px 0 #aeaba9;
-	z-index:99;
+	z-index:999;
 	.h-logo{
 		float:left;
 		text-decoration: none;
@@ -31,3 +31,129 @@
 		}
 	}
 }
+$nav-height:44px;
+$nav-min-height:24px;
+.fixed-header{
+	position: fixed;
+	height: 100px;
+	width: 100%;
+	top:0;
+	left: 0;
+	overflow: hidden;
+	z-index:9999;
+	.nav{
+		height: $nav-min-height;
+		position: relative;
+		z-index:1;
+		background-color:#000;
+		.nav-links{
+			height: $nav-height;
+			position: absolute;
+			top:0;
+			left: 0;
+			width: 100%;
+			background-color: #000;
+			color:#fff;
+			opacity: 1;
+			transition: all .4s ease;
+			.g-container{
+				height:100%;
+				ul{
+					height:100%;
+					li{
+						height:100%;
+						display:inline-block;
+						margin-right:10px;
+						a{
+							line-height:$nav-height;
+							display:inline-block;
+							color:#fff;
+							font-size:14px;
+							padding:0 10px;
+							height:100%;
+							&:hover{
+								background-color:#222;
+							}
+							.g-icon{
+								float:left;
+								margin-top:($nav-height - 26px) / 2;
+								margin-right:10px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.pigment{
+			height: $nav-height;
+			position: absolute;
+			background-color: #000;
+			text-align:center;
+			font-size:12px;
+			font-weight:700;
+			color:#fff;
+			top:0;
+			left: 0;
+			width: 100%;
+			transition: all .4s ease;
+			line-height: 64px;
+		}
+	}
+	.search{
+		height: 50px;
+		text-align: center;
+		background-color: #fff;
+		display: none;
+		.g-container{
+			height:100%;
+			position:relative;
+			#g-keyword{
+				width:100%;
+				height:100%;
+				box-sizing:border-box;
+				border:0 none;
+				outline:0 none;
+				font-size:18px;
+				padding-left:34px;
+			}
+			&:after{
+				width:20px;
+				height:20px;
+				position:absolute;
+				content:"";
+				background:url("../images/search.png") no-repeat center;
+				top:50%;
+				left:0;
+				margin-top:-10px;
+				background-size:20px;
+			}
+		}
+	}
+	&.active{
+		.nav-links{
+			transform: translate(0,-20px);
+			opacity: 0;
+		}
+		.pigment{
+			transform: translate(0,-20px);
+		}
+		.search{
+			display: block;
+		}
+		.nav:hover{
+			.nav-links{
+				opacity: 1;
+				transform: translate(0,0);
+			}
+			.pigment{
+				transform: translate(0,0);
+			}
+		}
+	}
+}
+
+
+
+
+
+

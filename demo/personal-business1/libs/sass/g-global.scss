@@ -35,8 +35,20 @@
 	box-sizing:border-box;
 	font-family:Oswald,Helvetica,arial,nimbussansl,liberationsans,freesans,clean,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
 .g-pt65{
 	padding-top:65px;
+}
+.g-pt44{
+	padding-top:44px;
+}
+.bg-black{
+	background-color:#000;
 }
 .clearfix:before,.clearfix:after{ 
     content:""; 
@@ -235,6 +247,22 @@ body{
 			border: 1px solid lighten(#5CB85C,30%);
 		}
 	}
+}
+.g-icon-coin{
+	background:url("../images/money-white.png") no-repeat center;
+	background-size:20px;
+}
+.g-icon-upload{
+	background:url("../images/upload-white.png") no-repeat center;
+	background-size:20px;
+}
+.g-icon-login{
+	background:url("../images/profile-white.png") no-repeat center;
+	background-size:20px;
+}
+.g-icon-create{
+	background:url("../images/profile-white.png") no-repeat center;
+	background-size:20px;
 }
 .loadmore{
 	width:100% !important;
