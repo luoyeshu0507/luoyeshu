@@ -1,0 +1,22 @@
+{
+  "name": "luoyeshu",
+  "version": "1.0.0",
+  "description": "luoyeshu.com web files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luoyeshu0507/luoyeshu.git"
+  },
+  "author": "luoyeshu0507",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luoyeshu0507/luoyeshu/issues"
+  },
+  "homepage": "https://github.com/luoyeshu0507/luoyeshu#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}

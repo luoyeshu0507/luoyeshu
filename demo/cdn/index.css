@@ -1,0 +1,88 @@
+body {
+  text-align: center;
+  background: #000 url('http://cdn1.luoyeshu.com/cdnbg.JPG?imageMogr2/auto-orient/thumbnail/1200x/blur/10x20/quality/75|imageslim') no-repeat center;
+  background-size: cover;
+  padding: 50px;
+}
+.img-wrap img {
+  cursor: pointer;
+}
+#c-display-imgbg{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,.5);
+  z-index:888;
+}
+.c-display-imgwrap{
+  width:70%;
+  height:70%;
+  position:fixed;
+  top:15%;
+  left:15%;
+  z-index:889;
+  text-align: center;
+}
+.c-display-imgwrap img{
+  max-height: 100%;
+  max-width: 100%;
+  position:relative;
+  transform: translate(0,-50%);
+  top:50%;
+  box-shadow: 5px 5px 10px rgb(68, 68, 68);
+}
+.exif{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -400px;
+  display: none;
+  color: #fff;
+  vertical-align: middle;
+  zoom: 1;
+  padding-right: 12px;
+  height: 28px;
+  padding-left: 36px;
+  font-size: 12px;
+  line-height: 28px;
+  background-color: rgba(0,0,0,.5);
+  background-image: url(camere.svg);
+  background-repeat: no-repeat;
+  background-position: 13px center;
+  background-size: 16px 14px;
+  bottom: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.exif:hover {
+  background-color: rgba(0,0,0,.7);
+}
+.c-display-imgwrap:hover .exif{
+  display: block;
+}
+.photo-info{
+  display: none;
+  position: absolute;
+  bottom: 40px;
+  width: 180px;
+  text-align: left;
+  left: 0;
+  padding: 22px 30px;
+  font-size: 12px;
+  background: rgba(0,0,0,.8);
+  border-radius: 4px;
+}
+.photo-info p span:first-child{
+  color: #999;
+}
+.exif:hover .photo-info{
+  display: block;
+}
+
+
+
+
+
+

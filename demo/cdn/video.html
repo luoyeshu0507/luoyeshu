@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video</title>
+  <script src="http://cdn1.luoyeshu.com/js/jquery.min.js"></script>
+  <style>
+    body{
+      text-align: center;
+    }
+    #button{
+      background-color: #1B8AFA;
+      display: inline-block;
+      line-height: 38px;
+      width: 150px;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #container img{
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <video id="video" width="80%" src="http://cdn1.luoyeshu.com/video/video.mp4" controls="controls">
+    您的浏览器不支持 video 标签。
+  </video>
+  <div>
+    <span id="button">Screenshot</span>
+    <p id="container"></p>
+  </div>
+  <script>
+    var video = document.getElementById('video');
+    $('#button').click(function() {
+      var time = Math.round(video.currentTime);
+      $('#container').append('<img src="http://cdn1.luoyeshu.com/video/video.mp4?vframe/jpg/offset/' + time + '/w/192/h/108"/>')
+    });
+  </script>
+</body>
+</html>
