@@ -48,10 +48,31 @@ var material = {
 	feirou: "肥肉",
 	shourou: "瘦肉",
 	lajiaohongyou: "辣椒红油",
-	zishu: "紫薯"
+	zishu: "紫薯",
+	suancai: "酸菜"
 };
 
 var peifang = [
+	{
+		name: "酸菜包",
+		main: "suancai",
+		base: 350,
+		quantity: {
+			zhuyou: 85,
+			huoguodiliao: 15,
+			jijing: 11,
+			weijing: 11,
+			baitang: 8,
+			lajiaofen: 4,
+			hujiaofen: 2,
+			shisanxiang: 2.5,
+			malaxian: 4,
+			mayou: 3,
+			shengjiang: 4,
+			suanzi: 4
+		},
+		note: "切记，酸菜多洗几遍，不然做出来很咸。锅里倒入熟猪油烧热加入生姜蒜子炸出香味加火锅底料，熬化关火，倒入辣椒粉，倒入酸菜开小火，把其他配料倒进去炒制，麻油最后放。"
+	},
 	{
 		name: "粉丝包",
 		main: "fensi",
