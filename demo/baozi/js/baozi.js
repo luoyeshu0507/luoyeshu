@@ -49,10 +49,56 @@ var material = {
 	shourou: "瘦肉",
 	lajiaohongyou: "辣椒红油",
 	zishu: "紫薯",
-	suancai: "酸菜"
+	suancai: "酸菜",
+	shengfen: "生粉",
+	nenroufen: "嫩肉粉",
+	jirou: "鸡肉",
+	huangjiu: "黄酒"
 };
 
 var peifang = [
+	{
+		name: "香菇鸡丁",
+		main: "baocaiye",
+		base: 143,
+		quantity: {
+			jirou: 91,
+			xianggu: 76.5,
+			huluobo: 50,
+			zhuyou: 60,
+			douyou: 10,
+			shengjiang: 2,
+			laochou: 2.5,
+			baitang: 10,
+			weijing: 5.2,
+			jijing: 3.8,
+			mayou: 5,
+			shisanxiang: 1.5,
+			lajiaohongyou: 3,
+			shiyan: 3.8,
+			shengfen: 3.3,
+			shui: 15,
+			huangjiu: 4.8
+		},
+		note: "锅里倒入食用油猪油烧热，倒入鸡肉炒制，倒入配料翻炒，最后倒入芡汁炒一会即可。"
+	},
+	{
+		name: "研制鸡肉",
+		main: "jirou",
+		base: 91,
+		quantity: {
+			huangjiu: 0.5,
+			xiaosuda: 0.16,
+			nenroufen: 0.48,
+			weijing: 0.16,
+			baitang: 2.2,
+			laochou: 0.38,
+			shiyan: 0.46,
+			shengfen: 0.9,
+			shui: 9
+		},
+		note: "包菜先用食盐腌制 5-10 分钟，然后清水洗一遍脱水，鸡肉切丁研制。"
+	},
 	{
 		name: "酸菜包",
 		main: "suancai",
@@ -250,7 +296,6 @@ var app = new Vue({
 	},
 	methods: {
 		switchSelect: function(key) {
-			console.log(this.cache[key], this.cache);
 			this.cache[key] = !this.cache[key];
 			this.hh++;
 		},
