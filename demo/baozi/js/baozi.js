@@ -53,7 +53,15 @@ var material = {
 	shengfen: "生粉",
 	nenroufen: "嫩肉粉",
 	jirou: "鸡肉",
-	huangjiu: "黄酒"
+	huangjiu: "黄酒",
+	teyixian: "特一鲜",
+	rou: "肉",
+	dianfen: "淀粉",
+	tianmianjiang: "甜面酱",
+	huangdoujiang: "黄豆酱",
+	jiu: "酒",
+	dacong: "大葱",
+	tudou: "土豆"
 };
 
 var peifang = [
@@ -149,7 +157,7 @@ var peifang = [
 			shourou: 20,
 			lajiaohongyou: 24,
 			jijing: 11,
-			weijing: 11,
+			weijing: 7,
 			shiyan: 2.5,
 			baitang: 5.5,
 			lajiaofen: 3,
@@ -184,20 +192,21 @@ var peifang = [
 	{
 		name: "香菇青菜包",
 		main:  "xiaoqingcai",
-		base: 5000,
+		base: 300,
 		quantity: {
-			xianggu: 300,
-			dougan: 1250,
-			douyou: 330,
-			shengjiang: 50,
-			xiangcong: 125,
-			mayou: 50,
-			shiyan: 50,
-			jijing: 125,
-			weijing: 125,
-			baitang: 150
+			xianggu: 30,
+			dougan: 70,
+			shiyan: 5,
+			jijing: 7,
+			weijing: 7,
+			teyixian: 2,
+			baitang: 13,
+			mayou: 3,
+			shengjiang: 3,
+			xiangcong: 8,
+			douyou: 66
 		},
-		note: "青菜过水甩干，水里加小苏打。"
+		note: "锅里倒入自来水烧开，倒入小苏打化开，青菜烫一下，捞起来凉水冲下切碎，然后把菜的水分挤干，香菇，豆干也切碎，待用。油凉了以后把调味料倒入切好菜的盆中开始搅拌均匀以后再加入麻油稍微搅拌即可。"
 	},
 	{
 		name: "香菇胡萝卜包菜",
@@ -280,6 +289,54 @@ var peifang = [
 			shui: 150
 		},
 		note: "紫薯放入高压锅小火炖，上汽七八分钟关掉，去皮，倒入搅拌机加水和白糖搅拌，制作：将锅内放入调和油，开小火，油微热就可以把泥状的紫薯放入，然后不停的翻动锅铲，将其搅拌均匀直到成糊状即可关火出锅。全程一定要小火加热。"
+	},
+	{
+		name: "纯酱肉包",
+		main: "rou",
+		base: 500,
+		quantity: {
+			shisanxiang: 0.3,
+			wuxiangfen: 0.3,
+			tianmianjiang: 30,
+			dacong: 40,
+			huangdoujiang: 30,
+			shengjiang: 15,
+			weijing: 2,
+			zhuyou: 30,
+			baitang: 4,
+			mayou: 20,
+			laochou: 15,
+			shui: 150,
+			shengchou: 15,
+			jijing: 3,
+			jiu: 3
+		},
+		note: "锅里倒入色拉油，倒入大葱，再倒入生姜炒香，加入猪肉丁，倒入甜面酱和黄豆酱，煸炒，炒香，大约 2 分钟，加入水，所有的料放进去，最后加一点小苏打（不能超过 1 克）炒个三分钟左右，最后加入水淀粉勾芡。炒好冷后加入大葱末。"
+	},
+	{
+		name: "杂酱肉包",
+		main: "rou",
+		base: 1000,
+		quantity: {
+			tudou: 1000,
+			huluobo: 500,
+			huangdoujiang: 120,
+			tianmianjiang: 120,
+			dacong: 160,
+			shengjiang: 60,
+			weijing: 8,
+			jijing: 12,
+			zhuyou: 120,
+			laochou: 45,
+			shengchou: 45,
+			dianfen: 20,
+			shui: 300,
+			jiu: 9,
+			baitang: 24,
+			shisanxiang: 1.2,
+			wuxiangfen: 1.2
+		},
+		note: ""
 	}
 ];
 
