@@ -61,10 +61,28 @@ var material = {
 	huangdoujiang: "黄豆酱",
 	jiu: "酒",
 	dacong: "大葱",
-	tudou: "土豆"
+	tudou: "土豆",
+	dijinmianfen: "低筋面粉",
+	selayou: "色拉油",
+	xianniunai: "鲜牛奶",
+	xishatangdanhuang: "细砂糖 + 蛋黄",
+	xishatangdanbai: "细砂糖 + 蛋白",
 };
 
 var peifang = [
+	{
+		name: "戚风蛋糕",
+		main: "jidan",
+		base: 5,
+		quantity: {
+			dijinmianfen: 85,
+			selayou: 40,
+			xianniunai: 40,
+			xishatangdanbai: 60,
+			xishatangdanhuang: 30,
+		},
+		note: "https://mp.weixin.qq.com/s/tjJKWp3WJNTYjkKi9RoJoA"
+	},
 	{
 		name: "香菇鸡丁",
 		main: "baocaiye",

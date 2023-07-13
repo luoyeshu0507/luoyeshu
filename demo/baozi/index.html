@@ -67,9 +67,10 @@
 							</td>
 						</tr>
 					</table>
-					<p>
+					<p v-if="peifang[selectedPeifang].note.indexOf('http') < 0">
 						{{peifang[selectedPeifang].note}}
 					</p>
+					<a v-else :href="peifang[selectedPeifang].note">制作步骤</a>
 				</div>
 			</div>
 		</div>
